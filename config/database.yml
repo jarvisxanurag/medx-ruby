@@ -5,19 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: medical
-  username: Amar_Gupta
+  database: postgres
+  username: anuragxjarvis
   password: Admin@123
   host: localhost
 
-test:
-  <<: *default
-  database: medical_test
-  username: Amar_Gupta
-  password: Admin@123
-  host: localhost
   
-
 production:
   primary:
     <<: *default
